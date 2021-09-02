@@ -9,7 +9,8 @@ title: Biography
 subtitle: ""
 design:
   background:
-    image: vantajs-net.png
+    image: vantajs-net-2.png
+    image_darken: 0.4
 ---
 I am pursuing my MS in Computer Science with specialization in Data Science and Machine Learning from the University of Texas at Arlington. I worked for Saxam SoftTech as Senior Software Engineer (Backend) after completing my Bachelor of Engineering in Computers from University of Mumbai. 
 
