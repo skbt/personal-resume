@@ -78,7 +78,7 @@ test_data.head()
 
 Output
 
-![](image2-output-test.png "Output of loading \"test.csv\"")
+![](image2-output-test.png "Output of loading \\"test.csv\\"")
 
 ###### Step 3 : Making a hypothesis and making the submission after testing and training the data
 
@@ -100,8 +100,6 @@ Output
 Similarly for men
 
 ```
-
-
 men = train_data.loc[train_data.Sex == 'male']["Survived"]
 rate_men = sum(men)/len(men)
 
@@ -142,6 +140,18 @@ Output
 
 ![](image5-output-submit.png)
 
- We would also get a file "submission.csv" which we upload to the competition for which we would be graded.
+We would also get a file "submission.csv" which we upload to the competition for which we would be graded.
 
 ![](image6-submit-score.png)
+
+
+
+We got the score of **0.77511** for our model.
+
+
+
+###### Link
+
+The link to the kaggle notebook can be found at:
+
+<https://www.kaggle.com/shashankrbhatia/getting-started-with-titanic>
