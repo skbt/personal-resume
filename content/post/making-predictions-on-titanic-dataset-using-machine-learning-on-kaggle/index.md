@@ -116,7 +116,7 @@ Here, we only used a single column to predict data. In real world we use multipl
 
 ###### Making Random Forest machine learning model
 
-Our previous test was based only on one column. To make model which can discover complex relationships, we can make use of multiple columns. We will use what is known as random forest model. Here, each "tree" will be a single passenger's data and it would take columns "Pclass", "Sex", "SibSp", and "Parch" of the data to make the decision. This model would individually consider each passenger's data and vote on whether the individual survived. It would take the data from train.csv file, generate predictions for the passengers in test.csv and then save the predictions in a submission.csv file.
+Our previous test was based only on one column. To make model which can discover complex relationships, we can make use of multiple columns. We will use what is known as random forest model. Here, each "tree" will be a single passenger's data and it would take the columns "Pclass", "Sex", "SibSp", and "Parch" of the data to make the decision. This model would individually consider each passenger's data and vote on whether the individual survived. It would take the data from train.csv file, generate predictions for the passengers in test.csv and then save the predictions in a submission.csv file.
 
 ```
 from sklearn.ensemble import RandomForestClassifier
