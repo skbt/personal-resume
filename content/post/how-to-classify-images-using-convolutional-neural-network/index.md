@@ -71,7 +71,16 @@ Extracting ./data/cifar-10-python.tar.gz to ./data
 Files already downloaded and verified
 ```
 
+```
+Files already downloaded and verified
+Files already downloaded and verified
+```
 
+We can now test to see some of the images we downloaded.
+
+```
+
+```
 
 ###### Links
 
