@@ -351,6 +351,77 @@ for epoch in range(10):  # loop over the dataset multiple times
 print('Finished Training')
 ```
 
+We get the output
+
+```
+[1,  8000] loss: 1.407
+[1, 10000] loss: 1.337
+[1, 12000] loss: 1.279
+[2,  2000] loss: 1.158
+[2,  4000] loss: 1.116
+[2,  6000] loss: 1.070
+[2,  8000] loss: 1.058
+[2, 10000] loss: 1.026
+[2, 12000] loss: 1.009
+[3,  2000] loss: 0.860
+[3,  4000] loss: 0.865
+[3,  6000] loss: 0.875
+[3,  8000] loss: 0.860
+[3, 10000] loss: 0.857
+[3, 12000] loss: 0.852
+[4,  2000] loss: 0.697
+[4,  4000] loss: 0.700
+[4,  6000] loss: 0.746
+[4,  8000] loss: 0.736
+[4, 10000] loss: 0.745
+[4, 12000] loss: 0.734
+[5,  2000] loss: 0.577
+[5,  4000] loss: 0.600
+[5,  6000] loss: 0.627
+[5,  8000] loss: 0.611
+[5, 10000] loss: 0.643
+[5, 12000] loss: 0.637
+[6,  2000] loss: 0.474
+[6,  4000] loss: 0.502
+[6,  6000] loss: 0.525
+[6,  8000] loss: 0.528
+[6, 10000] loss: 0.537
+[6, 12000] loss: 0.546
+[7,  2000] loss: 0.391
+[7,  4000] loss: 0.399
+[7,  6000] loss: 0.457
+[7,  8000] loss: 0.454
+[7, 10000] loss: 0.465
+[7, 12000] loss: 0.470
+[8,  2000] loss: 0.314
+[8,  4000] loss: 0.347
+[8,  6000] loss: 0.366
+[8,  8000] loss: 0.422
+[8, 10000] loss: 0.409
+[8, 12000] loss: 0.404
+[9,  2000] loss: 0.258
+[9,  4000] loss: 0.282
+[9,  6000] loss: 0.326
+[9,  8000] loss: 0.325
+[9, 10000] loss: 0.338
+[9, 12000] loss: 0.354
+[10,  2000] loss: 0.224
+[10,  4000] loss: 0.285
+[10,  6000] loss: 0.251
+[10,  8000] loss: 0.286
+[10, 10000] loss: 0.301
+[10, 12000] loss: 0.306
+Finished Training
+```
+
+We see that our loss has reduced considerably. 
+
+```
+Accuracy of the network on the 10000 test images: 72 %
+```
+
+After establishing ground truths and calculating accuracy we find that that our model is **72%** accurate.
+
 #### Links
 
 1. [CIFAR-10 Dataset](https://www.kaggle.com/c/cifar-10/data)
