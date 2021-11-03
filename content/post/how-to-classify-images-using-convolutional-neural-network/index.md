@@ -32,7 +32,15 @@ We would take the help of [PyTorch CIFAR-10 tutorial](<1. https://pytorch.org/tu
 
 ###### Process
 
+First we would have to import the torch package and download and load the data.
 
+```
+import torch
+import torchvision
+import torchvision.transforms as transforms
+```
+
+ 
 
 ###### Links
 
