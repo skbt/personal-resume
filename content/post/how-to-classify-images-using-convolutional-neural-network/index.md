@@ -420,7 +420,9 @@ We see that our loss has reduced considerably.
 Accuracy of the network on the 10000 test images: 72 %
 ```
 
-After establishing ground truths and calculating accuracy we find that that our model is **72%** accurate.
+After establishing ground truths and calculating accuracy we find that that our model is **72%** accurate and we have reduced the loss from 1.274 to 0.306.
+
+![](image-4-final-improvement.png)
 
 #### Links
 
