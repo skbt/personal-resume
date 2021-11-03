@@ -255,6 +255,75 @@ Accuracy of the network on the 10000 test images: 57 %
 
 Though in our testing, we got our ground-truth and prediction in a small sample as 100% correct, when we used the whole dataset, we got the accuracy as 57%.
 
+
+
+#### Contribution to improve the Model Accuracy
+
+We got the accuracy of 57%. Our job to experiment with the model to improve its accuracy.
+
+###### Experiment Model 1: Increase number of nodes in Convolution layer
+
+We increase the number of to nodes in Convolution layer 50/100
+
+```
+import torch.nn as nn
+import torch.nn.functional as F
+
+
+class Net(nn.Module):
+    def __init__(self):
+        super().__init__()
+        self.conv1 = nn.Conv2d(3, 50, 5)
+        self.pool = nn.MaxPool2d(2, 2)
+        self.conv2 = nn.Conv2d(50, 100, 5)
+        self.fc1 = nn.Linear(100 * 5 * 5, 120)
+        self.fc2 = nn.Linear(120, 84)
+        self.fc3 = nn.Linear(84, 10)
+
+    def forward(self, x):
+        x = self.pool(F.relu(self.conv1(x)))
+        x = self.pool(F.relu(self.conv2(x)))
+        x = torch.flatten(x, 1) # flatten all dimensions except batch
+        x = F.relu(self.fc1(x))
+        x = F.relu(self.fc2(x))
+        x = self.fc3(x)
+        return x
+
+
+net = Net()
+
+```
+
+We get the following output
+
+```
+[1,  2000] loss: 2.075
+[1,  4000] loss: 1.697
+[1,  6000] loss: 1.521
+[1,  8000] loss: 1.419
+[1, 10000] loss: 1.322
+[1, 12000] loss: 1.279
+[2,  2000] loss: 1.155
+[2,  4000] loss: 1.123
+[2,  6000] loss: 1.077
+[2,  8000] loss: 1.052
+[2, 10000] loss: 1.061
+[2, 12000] loss: 0.991
+Finished Training
+```
+
+We can see that our loss has reduced.
+
+```
+Accuracy of the network on the 10000 test images: 64 %
+```
+
+After establishing ground-truth and calculating accuracy, we find that our accuracy is **64%**, which is more than the base of 57%.
+
+###### Experiment Model 2: Increasing number of epochs
+
+We increase number of epochs for model to train from 2 to 10
+
 #### Links
 
 1. [CIFAR-10 Dataset](https://www.kaggle.com/c/cifar-10/data)
