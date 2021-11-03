@@ -28,6 +28,8 @@ Our objective is to make a neural network model, which can correctily classify a
 
 **PyTorch** is an open-source machine learning library created by Facebook. It can be used for various applications such as natural language and audio/speech processing, computer vision etc. Another similar library is TensorFlow. In this project we are going to use PyTorch.
 
+###### Process
+
 
 
 ###### Links
