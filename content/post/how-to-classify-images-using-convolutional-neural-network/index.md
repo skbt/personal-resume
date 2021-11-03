@@ -246,7 +246,12 @@ print('Accuracy of the network on the 10000 test images: %d %%' % (
     100 * correct / total))
 ```
 
+Output:
 
+```
+Predicted:    cat  ship  ship plane
+Accuracy of the network on the 10000 test images: 57 %
+```
 
 #### Links
 
