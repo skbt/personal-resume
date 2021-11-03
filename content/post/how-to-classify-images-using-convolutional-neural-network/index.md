@@ -95,6 +95,18 @@ imshow(torchvision.utils.make_grid(images))
 print(' '.join('%5s' % classes[labels[j]] for j in range(batch_size)))
 ```
 
+We get the following random images
+
+![](image-1-test-images.png)
+
+We also get their classes.
+
+```
+truck   cat   car plane
+```
+
+
+
 ###### Links
 
 1. [CIFAR-10 Dataset](https://www.kaggle.com/c/cifar-10/data)
