@@ -18,7 +18,7 @@ image:
   focal_point: Smart
   preview_only: false
 ---
-###### Introduction and Objective
+#### Introduction and Objective
 
 Our objective is to make a neural network model, which can correctly classify a given image into one of the 10 given classes of the CIFAR-10 dataset. We are using PyTorch library to make our model. 
 
@@ -30,7 +30,7 @@ Our objective is to make a neural network model, which can correctly classify a 
 
 We would take the help of [PyTorch CIFAR-10 tutorial](<1. https://pytorch.org/tutorials/beginner/blitz/cifar10_tutorial.html#sphx-glr-beginner-blitz-cifar10-tutorial-py>) for making the classifier and try to make improvements on it.
 
-###### Process
+#### Process
 
 First we would have to import the torch package and download and load the data.
 
@@ -107,12 +107,55 @@ truck   cat   car plane
 
 
 
-###### Links
+###### Making our Neural Network
+
+Now after testing the downloaded images, we can get to making our Convolutional Neural Network. We are going to use Classification Cross-Entropy loss for our function.
+
+```
+import torch.nn as nn
+import torch.nn.functional as F
+
+
+class Net(nn.Module):
+    def __init__(self):
+        super().__init__()
+        self.conv1 = nn.Conv2d(3, 6, 5)
+        self.pool = nn.MaxPool2d(2, 2)
+        self.conv2 = nn.Conv2d(6, 16, 5)
+        self.fc1 = nn.Linear(16 * 5 * 5, 120)
+        self.fc2 = nn.Linear(120, 84)
+        self.fc3 = nn.Linear(84, 10)
+
+    def forward(self, x):
+        x = self.pool(F.relu(self.conv1(x)))
+        x = self.pool(F.relu(self.conv2(x)))
+        x = torch.flatten(x, 1) # flatten all dimensions except batch
+        x = F.relu(self.fc1(x))
+        x = F.relu(self.fc2(x))
+        x = self.fc3(x)
+        return x
+
+
+net = Net()
+```
+
+```
+import torch.optim as optim
+
+criterion = nn.CrossEntropyLoss()
+optimizer = optim.SGD(net.parameters(), lr=0.001, momentum=0.9)
+```
+
+
+
+
+
+#### Links
 
 1. [CIFAR-10 Dataset](https://www.kaggle.com/c/cifar-10/data)
 2. [Our Jupyter Notebook with code](https://github.com/skbt/CIFAR-10-classfier/blob/main/DataMining_Assignment1-CIFAR-10_Classifier.ipynb)
 
-###### References
+#### References
 
 1. https://pytorch.org/tutorials/beginner/blitz/cifar10_tutorial.html#sphx-glr-beginner-blitz-cifar10-tutorial-py
 2. https://www.kaggle.com/c/cifar-10
