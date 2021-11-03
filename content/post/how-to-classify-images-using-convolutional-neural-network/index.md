@@ -36,10 +36,10 @@ Our objective is to make a neural network model, which can correctily classify a
 
 ###### References
 
-1. https://deepai.org/machine-learning-glossary-and-terms/convolutional-neural-network
-2. https://en.wikipedia.org/wiki/CIFAR-10
-3. https://www.ibm.com/cloud/learn/convolutional-neural-networks
-4. https://en.wikipedia.org/wiki/Convolutional_neural_network
-5. https://pytorch.org/tutorials/beginner/blitz/cifar10_tutorial.html#sphx-glr-beginner-blitz-cifar10-tutorial-py
-6. https://www.kaggle.com/c/cifar-10
+1. https://pytorch.org/tutorials/beginner/blitz/cifar10_tutorial.html#sphx-glr-beginner-blitz-cifar10-tutorial-py
+2. https://www.kaggle.com/c/cifar-10
+3. https://deepai.org/machine-learning-glossary-and-terms/convolutional-neural-network
+4. https://en.wikipedia.org/wiki/CIFAR-10
+5. https://www.ibm.com/cloud/learn/convolutional-neural-networks
+6. https://en.wikipedia.org/wiki/Convolutional_neural_network
 7. https://en.wikipedia.org/wiki/PyTorch
