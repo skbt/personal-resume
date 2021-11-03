@@ -206,6 +206,14 @@ torch.save(net.state_dict(), PATH)
 
 Now that we have made the neural network, we are going to test it's performance. To do this, we would make a prediction of the class the neural network is going to output and check it against the [ground-truth](https://en.wikipedia.org/wiki/Ground_truth#Statistics_and_machine_learning)
 
+Output: 
+
+![](image-2-ground-images.png)
+
+```
+GroundTruth:    cat  ship  ship plane
+```
+
 
 
 #### Links
