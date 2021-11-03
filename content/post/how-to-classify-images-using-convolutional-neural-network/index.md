@@ -177,7 +177,23 @@ for epoch in range(2):  # loop over the dataset multiple times
 print('Finished Training')
 ```
 
+We get the following output.
 
+```
+[1,  2000] loss: 2.208
+[1,  4000] loss: 1.867
+[1,  6000] loss: 1.694
+[1,  8000] loss: 1.575
+[1, 10000] loss: 1.529
+[1, 12000] loss: 1.481
+[2,  2000] loss: 1.399
+[2,  4000] loss: 1.373
+[2,  6000] loss: 1.353
+[2,  8000] loss: 1.330
+[2, 10000] loss: 1.319
+[2, 12000] loss: 1.274
+Finished Training
+```
 
 #### Links
 
