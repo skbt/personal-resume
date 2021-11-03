@@ -195,6 +195,19 @@ We get the following output.
 Finished Training
 ```
 
+After training we can save our model so we can use it again without having to train it again.
+
+```
+PATH = './cifar_net.pth'
+torch.save(net.state_dict(), PATH)
+```
+
+###### Testing our Neural Network
+
+Now that we have made the neural network, we are going to test it's performance. To do this, we would make a prediction of the class the neural network is going to output and check it against the [ground-truth](https://en.wikipedia.org/wiki/Ground_truth#Statistics_and_machine_learning)
+
+
+
 #### Links
 
 1. [CIFAR-10 Dataset](https://www.kaggle.com/c/cifar-10/data)
