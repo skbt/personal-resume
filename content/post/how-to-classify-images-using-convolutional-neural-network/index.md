@@ -20,7 +20,7 @@ image:
 ---
 ###### Introduction and Objective
 
-Our objective is to make a neural network model, which can correctily classify a given image into one of the 10 given classes of the CIFAR-10 dataset. We are making using PyTorch library to make our model.
+Our objective is to make a neural network model, which can correctily classify a given image into one of the 10 given classes of the CIFAR-10 dataset. We are making using PyTorch library to make our model. 
 
 **Convolution Neural Network (CNN)** are a feed-forward type of deep learning neural network. They are used to classify the data and are extensively used in making image classifiers, computer vision and video processing, audio and speech analysis, etc. The main difference in CNN and other matrix multiplication based neural networks is CNN uses *convolutions* in at least one layer of the neural network, i.e. takes it takes two functions and returns a function.
 
