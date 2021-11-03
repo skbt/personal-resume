@@ -253,6 +253,8 @@ Predicted:    cat  ship  ship plane
 Accuracy of the network on the 10000 test images: 57 %
 ```
 
+Though in our testing, we got our ground-truth and prediction in a small sample as 100% correct, when we used the whole dataset, we got the accuracy as 57%.
+
 #### Links
 
 1. [CIFAR-10 Dataset](https://www.kaggle.com/c/cifar-10/data)
