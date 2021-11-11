@@ -31,3 +31,7 @@ Our goal is explore and explain the concepts of model overfitting and underfitti
 1. https://www.pythonpool.com/matplotlib-table/
 
 2. https://datascience.stackexchange.com/questions/80868/overfitting-in-linear-regression
+
+3. https://en.wikipedia.org/wiki/Overfitting
+
+4. https://www.ibm.com/cloud/learn/overfitting
