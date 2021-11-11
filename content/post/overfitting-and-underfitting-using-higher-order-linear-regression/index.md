@@ -12,4 +12,4 @@ image:
 ---
 #### Introduction and Objective
 
-Our goal is explore and explain the concepts of model overfitting and underfitting using Higher Order Linear Regression
+Our goal is explore and explain the concepts of model overfitting and underfitting using Higher Order Linear Regression. We are going to use Python modules PyTorch, NumPy and matplotlib to make and plot the results of our model.
