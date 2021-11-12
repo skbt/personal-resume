@@ -51,7 +51,7 @@ y_train = y[:10]
 y_test = y[10:]
 ```
 
-###### b. Using root mean square error, find weights of polynomial regression for order is 0, 1, 3, 9
+###### b. Using root mean square error, finding weights of polynomial regression for order is 0, 1, 3, 9
 
 **Gradient Descent** is an optimization algorithm which is commonly-used to train machine learning models and neural networks. It works by finding a local minimum of a differentiable function. It takes repeated steps in the opposite direction of the gradient (or approximate gradient) of the function at the current point. **Learning rate** is the size of the steps that are taken to reach the minimum. The method of gradient descent updates the value of the weights based on the derivative of the loss function with respect to the weight.
 
