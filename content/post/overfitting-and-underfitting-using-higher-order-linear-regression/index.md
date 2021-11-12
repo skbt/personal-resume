@@ -110,18 +110,18 @@ class Model(object):
       print('Iteration:', i, 'Loss:', lossvalue.data.item())
       self.w0.data = self.w0.data - 0.01*self.w0.grad.data
       if self.pdegree > 0:
-		for k in range(1, len(self.w))
+		for k in range(1, len(self.w)):
 			self.w[k].data = self.w[k].data - 0.01*self.w[k].grad.data
 
     
     print('w0 :', self.w0.item())
     if self.pdegree > 0:
-      for k in range(1, len(self.w))
+      for k in range(1, len(self.w)):
 		print('w' + str(k) + ' :', self.w[k].item())
 
     M = [self.w0.item()]
     if self.pdegree > 0:
-      for i in range(1, len(self.w))
+      for i in range(1, len(self.w)):
         M.append(self.w[i].item())
  
     return M
