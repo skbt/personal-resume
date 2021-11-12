@@ -93,7 +93,7 @@ class Model(object):
 	num = self.w0
 	if self.pdegree > 0:
 		for i in range(1, len(self.w)):
-			num += self.w[i]*x**i
+			num = num + self.w[i]*x**i
     return num
 
   def loss(self, x_train, y_train):
@@ -101,6 +101,7 @@ class Model(object):
     return (y_pred - y_train) * (y_pred - y_train)
 
   def train(self, epoch = 10):
+    print('For polynomial of degree ' + str(pdegree))
     for i in range(epoch):
       lossvalue = 0
       for j in range(len(x_train)):
