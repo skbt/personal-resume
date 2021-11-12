@@ -18,11 +18,7 @@ Our goal is explore and explain the concepts of model overfitting and underfitti
 
 ![Figure 1 : Image showing Overfit, Underfit and Optimal Model. Image Credit : https://www.geeksforgeeks.org/underfitting-and-overfitting-in-machine-learning/](image-1-overfitting-underfitting.png "Figure 1 : Image showing Overfit, Underfit and Optimal Model. Image Credit : https://www.geeksforgeeks.org/underfitting-and-overfitting-in-machine-learning/")
 
-
-
 **Underfitting** is the opposite of Overfitting as the name suggests. It occurs when the model is too simple. The model generated is unable to capture the relationship between input and output variables accurately and has a high error rate for both training and test dataset. Its accuracy can be improved by making the model *more complex*.
-
-
 
 #### Process
 
@@ -35,15 +31,20 @@ from torch.autograd import Variable
 import matplotlib.pyplot as plt
 ```
 
-
-
 ###### a. Generate 20 data pairs (X, Y) using y = sin(2\*pi\*X) + 0.1 * N
 
 * Using uniform distribution between 0 and 1 for X
 * Sampling N from the normal gaussian distribution
 * Using 10 for train and 10 for test
 
+```
+np.random.seed(0)
 
+x = np.random.uniform(0.0, 1.0, 20)
+N = np.random.normal(0.0, 1.0, 20)
+y = np.sin(2*np.pi*x) + (0.1 * N)
+
+```
 
 #### Links
 
@@ -52,15 +53,10 @@ import matplotlib.pyplot as plt
 #### References
 
 1. https://www.pythonpool.com/matplotlib-table/
-
 2. https://datascience.stackexchange.com/questions/80868/overfitting-in-linear-regression
-
 3. https://en.wikipedia.org/wiki/Overfitting
-
 4. https://www.ibm.com/cloud/learn/overfitting
-
 5. https://www.geeksforgeeks.org/underfitting-and-overfitting-in-machine-learning/
-
 6. https://www.ibm.com/cloud/learn/underfitting
-
 7. https://www.geeksforgeeks.org/polynomial-regression-from-scratch-using-python/
+8. https://www.statology.org/mean-squared-error-python/
