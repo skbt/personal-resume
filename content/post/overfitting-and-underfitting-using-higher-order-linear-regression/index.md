@@ -92,7 +92,7 @@ class Model(object):
   def forward(self, x):
 	num = self.w0
 	if self.pdegree > 0:
-		for i in range(1, len(self.w))
+		for i in range(1, len(self.w)):
 			num += self.w[i]*x**i
 
   def loss(self, x_train, y_train):
