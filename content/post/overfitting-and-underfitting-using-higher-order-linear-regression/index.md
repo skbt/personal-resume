@@ -201,6 +201,33 @@ w8 : 0.20724961161613464
 w9 : 0.2652101218700409
 ```
 
+###### c. Displaying the weights in table
+
+```
+indexes = ['w0', 'w1', 'w2', 'w3', 'w4', 'w5', 'w6', 'w7', 'w8', 'w9']
+
+list1 = ["", "", "", "", "", "", "", "", ""]
+list2 = ["", "", "", "", "", "", "", ""]
+list3 = ["", "", "", "", "", ""]
+list4 = []
+
+def makeList(weights, degree, M, mylist):
+    for i in range(0, degree+1):
+        weights[M] = weights[M].flatten()
+        mylist.insert(i, str(round(weights[M][i], 4)))
+    return mylist
+
+weights_new = {
+    'M = 0': makeList(model, 0, 'M0', list1), 
+    'M = 1': makeList(model, 1, 'M1', list2),  
+    'M = 3': makeList(model, 3, 'M3', list3), 
+    'M = 9': makeList(model, 9, 'M9', list4)
+    }
+
+weights_df = pd.DataFrame(weights_new, index=indexes)
+weights_df
+```
+
 
 
 #### Links
