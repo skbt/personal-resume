@@ -29,7 +29,7 @@ import numpy as np
 import torch
 from torch.autograd import Variable
 import matplotlib.pyplot as plt
-from prettytable import PrettyTable
+import pandas as pd
 ```
 
 ###### a. Generate 20 data pairs (X, Y) using y = sin(2\*pi\*X) + 0.1 * N
