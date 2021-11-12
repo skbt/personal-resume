@@ -99,7 +99,7 @@ class Model(object):
     y_pred = forward(x_train)
     return (y_pred - y_train) * (y_pred - y_train)
 
-  def train(self, epoch = 10)
+  def train(self, epoch = 10):
     for i in range(epoch):
       lossvalue = 0
       for j in range(len(x_train)):
