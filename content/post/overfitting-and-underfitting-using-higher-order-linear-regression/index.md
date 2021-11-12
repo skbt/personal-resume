@@ -94,9 +94,10 @@ class Model(object):
 	if self.pdegree > 0:
 		for i in range(1, len(self.w)):
 			num += self.w[i]*x**i
+    return num
 
   def loss(self, x_train, y_train):
-    y_pred = forward(x_train)
+    y_pred = self.forward(x_train)
     return (y_pred - y_train) * (y_pred - y_train)
 
   def train(self, epoch = 10):
