@@ -101,7 +101,7 @@ class Model(object):
     return (y_pred - y_train) * (y_pred - y_train)
 
   def train(self, epoch = 10):
-    print('For polynomial of degree ' + str(pdegree))
+    print('For polynomial of degree ' + str(self.pdegree))
     for i in range(epoch):
       lossvalue = 0
       for j in range(len(x_train)):
