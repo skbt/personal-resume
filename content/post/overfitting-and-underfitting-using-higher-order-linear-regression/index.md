@@ -53,7 +53,7 @@ y_test = y[10:]
 
 ###### b. Using root mean square error, find weights of polynomial regression for order is 0, 1, 3, 9
 
-**Gradient Descent** is an optimization algorithm which is commonly-used to train machine learning models and neural networks. It works by finding a local minimum of a differentiable function. It takes repeated steps in the opposite direction of the gradient (or approximate gradient) of the function at the current point. **Learning rate** is the size of the steps that are taken to reach the minimum.
+**Gradient Descent** is an optimization algorithm which is commonly-used to train machine learning models and neural networks. It works by finding a local minimum of a differentiable function. It takes repeated steps in the opposite direction of the gradient (or approximate gradient) of the function at the current point. **Learning rate** is the size of the steps that are taken to reach the minimum. The method of gradient descent updates the value of the weights based on the derivative of the loss function with respect to the weight.
 
 Root Mean Square Error (**RMSE**) is a metric that tells us the average distance between the predicted values from the model and the actual values in the dataset.
 
@@ -66,7 +66,7 @@ Where
 * O<sub>i</sub> is the observed value for the i<sup>th</sup>  observation in the dataset
 * n is the sample size
 
-
+We are going to find and update weight using W_new = W_old - 0.01*dL/dW, where the constant 0.01 is the learning rate dictating the impact of the gradient on the new weight. This method of gradient descent is applied for each and every weight, w, of the model.
 
 #### Links
 
