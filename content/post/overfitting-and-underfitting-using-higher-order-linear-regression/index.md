@@ -53,6 +53,8 @@ y_test = y[10:]
 
 ###### b. Using root mean square error, find weights of polynomial regression for order is 0, 1, 3, 9
 
+**Gradient Descent** is an optimization algorithm which is commonly-used to train machine learning models and neural networks. It works by finding a local minimum of a differentiable function. It takes repeated steps in the opposite direction of the gradient (or approximate gradient) of the function at the current point. **Learning rate** is the size of the steps that are taken to reach the minimum.
+
 Root Mean Square Error (**RMSE**) is a metric that tells us the average distance between the predicted values from the model and the actual values in the dataset.
 
 <span style="color: #000000;"><strong>RMSE = </strong>√<span style="border-top: 1px solid black;">Σ(P<sub>i</sub> – O<sub>i</sub>)<sup>2</sup> / n</span></span>
@@ -80,3 +82,5 @@ Where
 6. https://www.ibm.com/cloud/learn/underfitting
 7. https://www.geeksforgeeks.org/polynomial-regression-from-scratch-using-python/
 8. https://www.statology.org/mean-squared-error-python/
+9. https://www.ibm.com/cloud/learn/gradient-descent
+10. https://en.wikipedia.org/wiki/Gradient_descent
