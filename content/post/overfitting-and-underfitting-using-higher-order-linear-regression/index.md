@@ -35,6 +35,14 @@ from torch.autograd import Variable
 import matplotlib.pyplot as plt
 ```
 
+
+
+###### a. Generate 20 data pairs (X, Y) using y = sin(2\*pi\*X) + 0.1 * N
+
+
+
+
+
 #### Links
 
 1. [Our Jupyter Notebook with Code](https://github.com/skbt/Overfitting-in-polynomial-regression/blob/main/Overfitting-using-Higher-Order-Linear-Regression.ipynb)
