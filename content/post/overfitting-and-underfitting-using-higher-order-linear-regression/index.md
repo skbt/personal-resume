@@ -68,6 +68,58 @@ Where
 
 We are going to find and update weight using W_new = W_old - 0.01*dL/dW, where the constant 0.01 is the learning rate dictating the impact of the gradient on the new weight. This method of gradient descent is applied for each and every weight, w, of the model.
 
+
+
+```
+class Model(object):
+
+  def __init__(self, pdegree):
+    self.pdegree = pdegree
+    self.w = []
+	self.w0 = torch.ones(1, requires_grad = True)
+	self.w.append(self.w0)
+	if self.pdegree > 0:
+		for i in range(self.pdegree):
+			self.w.append(torch.ones(1, requires_grad = True))
+
+  def forward(self, x):
+	num = self.w0
+	if self.pdegree > 0:
+		for i in range(1, len(self.w))
+			num += self.w[i]*x**i
+
+  def loss(self, x_train, y_train):
+    y_pred = forward(x_train)
+    return (y_pred - y_train) * (y_pred - y_train)
+
+  def train(self, epoch = 10)
+    for i in range(epoch):
+      lossvalue = 0
+      for j in range(len(x_train)):
+        l = loss(x_train[j], y_train[j])
+        lossvalue += l
+      lossvalue.backward()
+      print('Iteration:', i, 'Loss:', lossvalue.data.item())
+      self.w0.data = self.w0.data - 0.01*self.w0.grad.data
+      if self.pdegree > 0:
+		for k in range(1, len(self.w))
+			self.w[k].data = self.w[k].data - 0.01*self.w[k].grad.data
+
+    
+print('w0 :', self.w0.item())
+if self.pdegree > 0:
+	for k in range(1, len(self.w))
+		print('w' + str(k) + ' :', self.w[k].item())
+
+
+M = [self.w0.item()]
+if self.pdegree > 0:
+	for i in range(1, len(self.w))
+		M.append(self.w[i].item())
+ 
+ return M
+```
+
 #### Links
 
 1. [Our Jupyter Notebook with Code](https://github.com/skbt/Overfitting-in-polynomial-regression/blob/main/Overfitting-using-Higher-Order-Linear-Regression.ipynb)
