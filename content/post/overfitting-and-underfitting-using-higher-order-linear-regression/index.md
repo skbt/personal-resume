@@ -72,13 +72,6 @@ We are going to find and update weight using W_new = W_old - 0.01*dL/dW, where t
 
 
 ```
-degree = [0, 1, 3, 9]
-model = []
-for d in degree:
-  m = Model(d)
-  model.append(m.train())
-
-
 class Model(object):
 
   def __init__(self, pdegree):
@@ -128,6 +121,14 @@ class Model(object):
         M.append(self.w[i].item())
  
     return M
+    
+degree = [0, 1, 3, 9]
+model = []
+
+for d in degree:
+  m = Model(d)
+  model.append(m.train())
+
 ```
 
 Using epoch =10, we get the following output
