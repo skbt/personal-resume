@@ -14,7 +14,7 @@ image:
 
 Our goal is explore and explain the concepts of model overfitting and underfitting using Higher Order Linear Regression. We are going to use Python modules PyTorch, NumPy and matplotlib to make and plot the results of our model. We would generate the data, divide it into train and test datasets, and then analyze it. The detailed problem statement can be found on the [Google Doc](https://docs.google.com/document/d/126p_RE60XSdpzmNWmO-OUOGsUbR-LczyYDQ9I4xnYAQ/edit#) by made my professor, [Dr. Deokgun Park](https://crystal.uta.edu/~park/), for the class CSE 5331 Data Mining. 
 
-**Overfitting** 
+**Overfitting** is said to occur when a model corresponds very closely to training data set and usually contains more parameters than required by the data. The model generated works very well against training data and has a very high accuracy against it but not very accurate against any other unseen data.
 
 
 
@@ -35,3 +35,7 @@ Our goal is explore and explain the concepts of model overfitting and underfitti
 3. https://en.wikipedia.org/wiki/Overfitting
 
 4. https://www.ibm.com/cloud/learn/overfitting
+
+5. https://www.geeksforgeeks.org/underfitting-and-overfitting-in-machine-learning/
+
+6. https://www.ibm.com/cloud/learn/underfitting
