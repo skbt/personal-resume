@@ -29,6 +29,7 @@ import numpy as np
 import torch
 from torch.autograd import Variable
 import matplotlib.pyplot as plt
+from prettytable import PrettyTable
 ```
 
 ###### a. Generate 20 data pairs (X, Y) using y = sin(2\*pi\*X) + 0.1 * N
@@ -75,7 +76,7 @@ degree = [0, 1, 3, 9]
 model = []
 for d in degree:
   m = Model(d)
-  model.append(m.train)
+  model.append(m.train())
 
 
 class Model(object):
@@ -101,6 +102,7 @@ class Model(object):
     return (y_pred - y_train) * (y_pred - y_train)
 
   def train(self, epoch = 10):
+    print()
     print('For polynomial of degree ' + str(self.pdegree))
     for i in range(epoch):
       lossvalue = 0
@@ -128,7 +130,75 @@ class Model(object):
     return M
 ```
 
+Using epoch =10, we get the following output
 
+```
+
+For polynomial of degree 0
+Iteration: 0 Loss: 17.66655921936035
+Iteration: 1 Loss: 12.206013679504395
+Iteration: 2 Loss: 5.434935569763184
+Iteration: 3 Loss: 2.49934458732605
+Iteration: 4 Loss: 5.630291938781738
+Iteration: 5 Loss: 12.448257446289062
+Iteration: 6 Loss: 17.771587371826172
+Iteration: 7 Loss: 17.554550170898438
+Iteration: 8 Loss: 11.962095260620117
+Iteration: 9 Loss: 5.244487285614014
+w0 : -0.2020360231399536
+
+For polynomial of degree 1
+Iteration: 0 Loss: 37.99821472167969
+Iteration: 1 Loss: 21.088102340698242
+Iteration: 2 Loss: 4.740396499633789
+Iteration: 3 Loss: 5.836953639984131
+Iteration: 4 Loss: 23.216598510742188
+Iteration: 5 Loss: 38.87610626220703
+Iteration: 6 Loss: 36.582923889160156
+Iteration: 7 Loss: 18.657501220703125
+Iteration: 8 Loss: 3.575340747833252
+Iteration: 9 Loss: 6.8678436279296875
+w0 : 1.006404161453247
+w1 : 0.40355294942855835
+
+For polynomial of degree 3
+Iteration: 0 Loss: 76.13774871826172
+Iteration: 1 Loss: 35.21417999267578
+Iteration: 2 Loss: 4.1375603675842285
+Iteration: 3 Loss: 21.363895416259766
+Iteration: 4 Loss: 65.25962829589844
+Iteration: 5 Loss: 81.0052490234375
+Iteration: 6 Loss: 48.74273681640625
+Iteration: 7 Loss: 8.278226852416992
+Iteration: 8 Loss: 9.639623641967773
+Iteration: 9 Loss: 50.92899703979492
+w0 : 1.8113633394241333
+w1 : 0.7055118680000305
+w2 : 0.39220136404037476
+w3 : 0.36708498001098633
+
+For polynomial of degree 9
+Iteration: 0 Loss: 179.9287109375
+Iteration: 1 Loss: 70.34640502929688
+Iteration: 2 Loss: 7.7664079666137695
+Iteration: 3 Loss: 80.0475082397461
+Iteration: 4 Loss: 180.31773376464844
+Iteration: 5 Loss: 161.70538330078125
+Iteration: 6 Loss: 49.623294830322266
+Iteration: 7 Loss: 5.504806995391846
+Iteration: 8 Loss: 94.158203125
+Iteration: 9 Loss: 190.01898193359375
+w0 : 2.8707337379455566
+w1 : 0.969760000705719
+w2 : 0.25171470642089844
+w3 : 0.01874123513698578
+w4 : -0.019307851791381836
+w5 : 0.017044663429260254
+w6 : 0.07815936207771301
+w7 : 0.14408139884471893
+w8 : 0.20724961161613464
+w9 : 0.2652101218700409
+```
 
 
 
