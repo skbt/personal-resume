@@ -44,7 +44,27 @@ x = np.random.uniform(0.0, 1.0, 20)
 N = np.random.normal(0.0, 1.0, 20)
 y = np.sin(2*np.pi*x) + (0.1 * N)
 
+x_train = x[:10]
+x_test = x[10:]
+
+y_train = y[:10]
+y_test = y[10:]
 ```
+
+###### b. Using root mean square error, find weights of polynomial regression for order is 0, 1, 3, 9
+
+Root Mean Square Error (**RMSE**) is a metric that tells us the average distance between the predicted values from the model and the actual values in the dataset.
+
+<span style="color: #000000;"><strong>RMSE = </strong>√<span style="border-top: 1px solid black;">Σ(P<sub>i</sub> – O<sub>i</sub>)<sup>2</sup> / n</span></span>
+
+Where 
+
+* Σ is sum
+* P<sub>i</sub> is the predicted value for the i<sup>th</sup> observation in the dataset
+* O<sub>i</sub> is the observed value for the i<sup>th</sup>  observation in the dataset
+* n is the sample size
+
+
 
 #### Links
 
