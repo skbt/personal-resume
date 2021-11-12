@@ -247,6 +247,8 @@ Output
 
 
 
+###### d. Draw a chart of fit data
+
 
 
 #### Links
