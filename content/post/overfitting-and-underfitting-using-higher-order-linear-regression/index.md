@@ -39,9 +39,9 @@ import matplotlib.pyplot as plt
 
 ###### a. Generate 20 data pairs (X, Y) using y = sin(2\*pi\*X) + 0.1 * N
 
-* Use uniform distribution between 0 and 1 for X
-* Sample N from the normal gaussian distribution
-* Use 10 for train and 10 for test
+* Using uniform distribution between 0 and 1 for X
+* Sampling N from the normal gaussian distribution
+* Using 10 for train and 10 for test
 
 
 
