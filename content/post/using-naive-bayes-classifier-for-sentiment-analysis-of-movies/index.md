@@ -13,12 +13,10 @@ image:
 
 **Sentiment analysis** is a technique through which we can analyze a piece of text to determine the sentiment behind it, i.e. whether the given text conveys a positive, negative or a neutral sentiment. It is widely used to gauge the feedback and can be used in industries ranging from social media, shopping and movie reviews to election results and healthcare.
 
-We are going to use sentiment analysis on the movie data from IMDb dataset.
-
-
+We are going to use sentiment analysis on the movie data. The link for the dataset on kaggle can be found in the links section below.
 
 #### Links
 
-
+1. [Movie Dataset on kaggle for sentiment analysis](https://www.kaggle.com/marklvl/sentiment-labelled-sentences-data-set)
 
 #### References
