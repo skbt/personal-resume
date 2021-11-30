@@ -20,3 +20,8 @@ We are going to use sentiment analysis on the movie data. The link for the datas
 1. [Movie Dataset on kaggle for sentiment analysis](https://www.kaggle.com/marklvl/sentiment-labelled-sentences-data-set)
 
 #### References
+
+1. https://en.wikipedia.org/wiki/Sentiment_analysis
+2. https://www.lexalytics.com/technology/sentiment-analysis
+3. https://en.wikipedia.org/wiki/Naive_Bayes_classifier
+4. https://scikit-learn.org/stable/modules/naive_bayes.html
