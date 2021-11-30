@@ -13,7 +13,9 @@ image:
 
 **Sentiment analysis** is a technique through which we can analyze a piece of text to determine the sentiment behind it, i.e. whether the given text conveys a positive, negative or a neutral sentiment. It is widely used to gauge the feedback and can be used in industries ranging from social media, shopping and movie reviews to election results and healthcare.
 
-We are going to use sentiment analysis on the movie data. The link for the dataset on kaggle can be found in the links section below. We are going to use imdb dataset, but you can choose amazon or yelp if you want.
+We are going to use sentiment analysis on the movie data. The link for the dataset on kaggle can be found in the links section below. We are going to use imdb dataset, but you can choose amazon or yelp if you want. To do the analysis, we are going to use **Naive Bayes Classifier**.
+
+**Naive Bayes Classifier** use Bayes' theorem with strong (naïve) independence assumptions between the features. Because of this they can be used with fairly high accuracy even when some of the data is missing or has unknown values. This makes them a good candidate for text classification.
 
 #### Links
 
