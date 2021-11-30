@@ -1,0 +1,24 @@
+---
+title: Using Naive Bayes Classifier For Sentiment Analysis of movies
+subtitle: Sentiment Analysis of movies on IMDb data using Naive Bayes Classifier
+date: 2021-11-30T18:01:41.629Z
+draft: false
+featured: false
+image:
+  filename: featured
+  focal_point: Smart
+  preview_only: false
+---
+#### Introduction and Objective
+
+**Sentiment analysis** is a technique through which we can analyze a piece of text to determine the sentiment behind it, i.e. whether the given text conveys a positive, negative or a neutral sentiment. It is widely used to gauge the feedback and can be used in industries ranging from social media, shopping and movie reviews to election results and healthcare.
+
+We are going to use sentiment analysis on the movie data from IMDb dataset.
+
+
+
+#### Links
+
+
+
+#### References
