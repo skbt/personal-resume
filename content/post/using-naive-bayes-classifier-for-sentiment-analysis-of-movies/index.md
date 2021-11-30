@@ -17,6 +17,8 @@ We are going to use sentiment analysis on the movie data. The link for the datas
 
 **Naive Bayes Classifier** use Bayes' theorem with strong (naïve) independence assumptions between the features. Because of this they can be used with fairly high accuracy even when some of the data is missing or has unknown values. This makes them a good candidate for text classification.
 
+#### Process
+
 
 
 #### Links
