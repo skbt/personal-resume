@@ -23,6 +23,98 @@ We are going to use sentiment analysis on the movie data. The link for the datas
 
 After importing the required libraries, our first step is going to import the data. We have three dataset options to choose from in the kaggle link - IMDb, Amazon or Yelp. We are going to select IMDb.
 
+```
+import numpy as np
+import matplotlib.pyplot as plt
+import pandas as pd
+
+data= pd.read_csv('imdb_labelled.txt', names=['Reviews','Sentiment'], delimiter = '\t')
+data.info()
+```
+
+We get the following output
+
+```
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 748 entries, 0 to 747
+Data columns (total 2 columns):
+ #   Column     Non-Null Count  Dtype 
+---  ------     --------------  ----- 
+ 0   Reviews    748 non-null    object
+ 1   Sentiment  748 non-null    int64 
+dtypes: int64(1), object(1)
+memory usage: 11.8+ KB
+```
+
+This shows that we have 748 rows in our dataset.
+
+<table>
+<tr>
+<th> </th>
+<th>Reviews</th>
+<th>Sentiment</th>
+</tr>
+<tr>
+<td>0</td>
+<td>A very, very, very slow-moving, aimless movie ...</td>
+<td>0</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Not sure who was more lost - the flat characte...</td>
+<td>0</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Attempting artiness with black & white and cle...</td>
+<td>0</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Very little music or anything to speak of.</td>
+<td>0</td>
+</tr>
+<tr>
+<td>4</td>
+<td>The best scene in the movie was when Gerardo i...</td>
+<td>1</td>
+</tr>
+<tr>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+</tr>
+<tr>
+<td>743</td>
+<td>I just got bored watching Jessice Lange take h...</td>
+<td>0</td>
+</tr>
+<tr>
+<td>744</td>
+<td>Unfortunately, any virtue in this film's produ...</td>
+<td>0</td>
+</tr>
+<tr>
+<td>745</td>
+<td>In a word, it is embarrassing.</td>
+<td>0</td>
+</tr>
+<tr>
+<td>746</td>
+<td>Exceptionally bad!</td>
+<td>0</td>
+</tr>
+<tr>
+<td>747</td>
+<td>All in all its an insult to one's intelligence...</td>
+<td>0</td>
+</tr>
+</table>
+
+```
+748 rows × 2 columns
+```
+
 
 
 #### Links
