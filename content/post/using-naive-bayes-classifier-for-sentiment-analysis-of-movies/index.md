@@ -48,7 +48,7 @@ memory usage: 11.8+ KB
 
 This shows that we have 748 rows in our dataset.
 
-To view the data we can call the data object, which would print all the rows
+To view the data we can call the data object, which would print rows
 
 ```
 data
@@ -121,7 +121,39 @@ data
 748 rows × 2 columns
 ```
 
+###### Split the data
 
+Now that we have the data, we are going to split it into train, test, and development datasets.
+
+We are going to divide the dataset into *train:development: test = 85:10:5* ratio.
+
+<table>
+<tr>
+<th>DataSet</th>
+<th>Percent</th>
+<th>Number</th>
+</tr>
+<tr>
+<td>Train</td>
+<td>85</td>
+<td>639</td>
+</tr>
+<tr>
+<td>Development</td>
+<td>10</td>
+<td>75</td>
+</tr>
+<tr>
+<td>Test</td>
+<td>5</td>
+<td>37</td>
+</tr>
+<tr>
+<td>**Total**</td>
+<td>100</td>
+<td>748</td>
+</tr>
+</table>
 
 #### Links
 
