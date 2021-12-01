@@ -149,9 +149,9 @@ We are going to divide the dataset into *train:development: test = 85:10:5* rati
 <td>37</td>
 </tr>
 <tr>
-<td>**Total**</td>
-<td>100</td>
-<td>748</td>
+<td><b>Total</b></td>
+<td><b>100</b></td>
+<td><b>748</b></td>
 </tr>
 </table>
 
