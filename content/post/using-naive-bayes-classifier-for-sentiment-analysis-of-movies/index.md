@@ -170,6 +170,77 @@ shuffle_data = shuffle_data.sample(frac=1,
 shuffle_data.head(10)
 ```
 
+We get the following output which suggests that our data has been shuffled. We can now proceed to split the data.
+
+<table>
+<tr>
+<th></th>
+<th>index</th>
+<th>Reviews</th>
+<th>Sentiment</th>
+</tr>
+<tr>
+<td>0</td>
+<td>265</td>
+<td>But the premise of the film was so ridiculous:...</td>
+<td>0</td>
+</tr>
+<tr>
+<td>1</td>
+<td>519</td>
+<td>You can find better movies at youtube.</td>
+<td>0</td>
+</tr>
+<tr>
+<td>2</td>
+<td>584</td>
+<td>I saw it as a child on TV back in 1973, when i...</td>
+<td>1</td>
+</tr>
+<tr>
+<td>3</td>
+<td>717</td>
+<td>At a time when it seems that film animation ha...</td>
+<td>1</td>
+</tr>
+<tr>
+<td>4</td>
+<td>90</td>
+<td>Also, it's a real treat to see Anthony Quinn p...</td>
+<td>1</td>
+</tr>
+<tr>
+<td>5</td>
+<td>664</td>
+<td>Excellent short film.</td>
+<td>1</td>
+</tr>
+<tr>
+<td>6</td>
+<td>666</td>
+<td>I agree with Jessica, this movie is pretty bad.</td>
+<td>0</td>
+</tr>
+<tr>
+<td>7</td>
+<td>84</td>
+<td>This movie is a pure disaster, the story is st...</td>
+<td>0</td>
+</tr>
+<tr>
+<td>8</td>
+<td>422</td>
+<td>This is a masterful piece of film-making, with...</td>
+<td>1</td>
+</tr>
+<tr>
+<td>9</td>
+<td>85</td>
+<td>The fish is badly made and some of its underwa...</td>
+<td>0</td>
+</tr>
+</table>
+
 
 
 #### Links
