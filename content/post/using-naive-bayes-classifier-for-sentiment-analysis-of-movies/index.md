@@ -48,6 +48,12 @@ memory usage: 11.8+ KB
 
 This shows that we have 748 rows in our dataset.
 
+To view the data we can call the data object, which would print all the rows
+
+```
+data
+```
+
 <table>
 <tr>
 <th> </th>
