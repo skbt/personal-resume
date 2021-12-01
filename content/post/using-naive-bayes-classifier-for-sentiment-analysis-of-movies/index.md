@@ -19,6 +19,10 @@ We are going to use sentiment analysis on the movie data. The link for the datas
 
 #### Process
 
+###### Import the Data
+
+Our first step is going to import the data. We have three dataset options to choose from in the kaggle link - IMDb, Amazon or Yelp. We are going to select IMDb.
+
 
 
 #### Links
