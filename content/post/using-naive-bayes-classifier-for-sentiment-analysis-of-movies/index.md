@@ -155,6 +155,23 @@ We are going to divide the dataset into *train:development: test = 85:10:5* rati
 </tr>
 </table>
 
+
+
+To make it unbiased, we would shuffle the data before splitting.
+
+```
+# make a copy of the data
+shuffle_data = data.copy(deep=True)
+# shuffle data with sample().
+# frac = 1 is entire dataset, random_state=1 for reproducible data
+# and reset_index() to reset the index
+shuffle_data = shuffle_data.sample(frac=1,
+                  random_state=1).reset_index()
+shuffle_data.head(10)
+```
+
+
+
 #### Links
 
 1. [Movie Dataset on kaggle for sentiment analysis](https://www.kaggle.com/marklvl/sentiment-labelled-sentences-data-set)
