@@ -120,6 +120,7 @@ This shows that we have 748 rows in our dataset.
 #### Links
 
 1. [Movie Dataset on kaggle for sentiment analysis](https://www.kaggle.com/marklvl/sentiment-labelled-sentences-data-set)
+2. [Our Jupyter Notebook with Code](https://github.com/skbt/Sentiment-analysis-using-Naive-Bayes/blob/main/Sentiment-Analysis-using-NBC.ipynb)
 
 #### References
 
