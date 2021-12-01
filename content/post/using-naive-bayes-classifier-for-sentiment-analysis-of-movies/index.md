@@ -155,8 +155,6 @@ We are going to divide the dataset into *train:development: test = 85:10:5* rati
 </tr>
 </table>
 
-
-
 To make it unbiased, we would shuffle the data before splitting.
 
 ```
@@ -170,7 +168,7 @@ shuffle_data = shuffle_data.sample(frac=1,
 shuffle_data.head(10)
 ```
 
-We get the following output which suggests that our data has been shuffled. We can now proceed to split the data.
+We get the following output which suggests that our data has been shuffled.
 
 <table>
 <tr>
@@ -240,6 +238,56 @@ We get the following output which suggests that our data has been shuffled. We c
 <td>0</td>
 </tr>
 </table>
+
+ We can now proceed to split the data.
+
+```
+train_data = shuffle_data[0:639]
+dev_data = shuffle_data[639:714]
+test_data = shuffle_data[714:]
+
+train_data.info()
+dev_data.info()
+test_data.info()
+```
+
+We get the following output, suggesting that split was successful
+
+```
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 639 entries, 0 to 638
+Data columns (total 3 columns):
+ #   Column     Non-Null Count  Dtype 
+---  ------     --------------  ----- 
+ 0   index      639 non-null    int64 
+ 1   Reviews    639 non-null    object
+ 2   Sentiment  639 non-null    int64 
+dtypes: int64(2), object(1)
+memory usage: 15.1+ KB
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 75 entries, 639 to 713
+Data columns (total 3 columns):
+ #   Column     Non-Null Count  Dtype 
+---  ------     --------------  ----- 
+ 0   index      75 non-null     int64 
+ 1   Reviews    75 non-null     object
+ 2   Sentiment  75 non-null     int64 
+dtypes: int64(2), object(1)
+memory usage: 1.9+ KB
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 34 entries, 714 to 747
+Data columns (total 3 columns):
+ #   Column     Non-Null Count  Dtype 
+---  ------     --------------  ----- 
+ 0   index      34 non-null     int64 
+ 1   Reviews    34 non-null     object
+ 2   Sentiment  34 non-null     int64 
+dtypes: int64(2), object(1)
+memory usage: 948.0+ bytes
+
+```
+
+
 
 
 
