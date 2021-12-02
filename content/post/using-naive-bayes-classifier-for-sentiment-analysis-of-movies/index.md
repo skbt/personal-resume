@@ -366,6 +366,12 @@ word freq neg: {'but': 50, 'the': 439, 'premise': 3, 'of': 192, 'film': 72, 'was
 
 
 
+We can improve the list by removing rare words, i.e. words with frequency < 5.
+
+```
+
+```
+
 
 
 #### Links
