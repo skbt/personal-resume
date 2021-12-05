@@ -372,7 +372,16 @@ word_list.sort()
 
 words_freq={k:v for k,v in words_freq.items() if v >= 5}
 
+word_list_pos=[item for item in word_list_pos if item in words_freq]
+word_list_pos.sort()
+words_freq_pos={k:v for k,v in words_freq_pos.items() if k in words_freq}
+
+word_list_neg=[item for item in word_list_pos if item in words_freq]
+word_list_neg.sort()
+words_freq_neg={k:v for k,v in words_freq_pos.items() if k in words_freq}
 ```
+
+
 
 #### Links
 
