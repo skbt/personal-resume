@@ -422,7 +422,12 @@ prob_word_pos = word_count_pos*100/pos_total
 print('The probability of random positive sentence containing the word \'' + word_calc + '\' is ', prob_word_pos, '%')
 ```
 
+Output
 
+```
+The probability of random sentence containing the word 'the' is  50.80213903743316 %
+The probability of random positive sentence containing the word 'the' is  52.84974093264249 %
+```
 
 #### Links
 
