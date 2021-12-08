@@ -388,9 +388,39 @@ We can calculate the probability of any word. For our analysis we are going to c
 
 P\["the"] = <sup>num of documents containing "the"</sup>/<sub>num of all documents</sub>
 
+We are going to compare this with the probability of the word in a postitive sentiment case, i.e.
 
+P\["the"|Positive] = <sup>num of Positive documents containing "the"</sup>/<sub>num of all positive documents</sub>
 
+```
+word_count=0
+word_count_pos=0
+pos_total=0
+word_calc='the'
 
+for sentence,sentence_sentiment in zip(shuffle_data['Reviews'],shuffle_data['Sentiment']):
+    if sentence_sentiment == 1:
+        pos_total = pos_total + 1
+        
+    for word in sentence.split(' '):
+        word_lower = word.lower()
+        
+        if word_lower != '':
+            
+            if word_lower == word_calc:
+                word_count = word_count + 1
+                
+                if sentence_sentiment == 1:
+                    word_count_pos = word_count_pos + 1
+                    break
+                break
+
+prob_word = word_count*100/len(shuffle_data)
+print('The probability of random sentence containing the word \'' + word_calc + '\' is ', prob_word, '%')
+
+prob_word_pos = word_count_pos*100/pos_total
+print('The probability of random positive sentence containing the word \'' + word_calc + '\' is ', prob_word_pos, '%')
+```
 
 
 
