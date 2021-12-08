@@ -429,6 +429,10 @@ The probability of random sentence containing the word 'the' is  50.802139037433
 The probability of random positive sentence containing the word 'the' is  52.84974093264249 %
 ```
 
+We got that the probability of the word "the" appearing in a random document is about **50.80%** where probability of the word appearing in a random *positive* document is about **52.85%**.
+
+
+
 #### Links
 
 1. [Movie Dataset on kaggle for sentiment analysis](https://www.kaggle.com/marklvl/sentiment-labelled-sentences-data-set)
