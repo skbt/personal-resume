@@ -383,9 +383,9 @@ words_freq_neg={k:v for k,v in words_freq_pos.items() if k in words_freq}
 
 ###### Calculate the probability of the word "the"
 
-We can calculate the probability of any word. For our analysis we are going to calculate teh probability of the word "the". We are going to so do so by 
+We can calculate the probability of any word. For our analysis we are going to calculate the probability of the word "the". We are going to so do so by 
 
-\frac{\frac{x}{1}}{x - y}
+P\["the"] = <math><mfrac><mi>num of documents containing "the"</mi><mi>num of all documents</mi></mfrac></math>
 
 #### Links
 
