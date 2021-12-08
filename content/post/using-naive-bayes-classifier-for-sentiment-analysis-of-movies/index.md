@@ -314,32 +314,33 @@ for sentence,sentence_sentiment in zip(shuffle_data['Reviews'],shuffle_data['Sen
   for word in sentence.split(' '):
     word_lower = word.lower()
 
-    if word_lower not in word_list:
-      word_list.append(word_lower)
-      words_freq[word_lower] = 1
-
-      if sentence_sentiment == 1:
-        word_list_pos.append(word_lower)
-        words_freq_pos[word_lower] = 1
-      else:
-        word_list_neg.append(word_lower)
-        words_freq_neg[word_lower] = 1
-
-    else:
-      words_freq[word_lower] = words_freq[word_lower] + 1
-      
-      if sentence_sentiment == 1:
-        if word_lower not in word_list_pos:
+    if word_lower != '':
+      if word_lower not in word_list:
+        word_list.append(word_lower)
+        words_freq[word_lower] = 1
+        
+        if sentence_sentiment == 1:
           word_list_pos.append(word_lower)
           words_freq_pos[word_lower] = 1
         else:
-          words_freq_pos[word_lower] = words_freq_pos[word_lower] + 1
-      else:
-        if word_lower not in word_list_neg:
           word_list_neg.append(word_lower)
           words_freq_neg[word_lower] = 1
+          
+      else:
+        words_freq[word_lower] = words_freq[word_lower] + 1
+        
+        if sentence_sentiment == 1:
+          if word_lower not in word_list_pos:
+            word_list_pos.append(word_lower)
+            words_freq_pos[word_lower] = 1
+          else:
+            words_freq_pos[word_lower] = words_freq_pos[word_lower] + 1
         else:
-          words_freq_neg[word_lower] = words_freq_neg[word_lower] + 1
+          if word_lower not in word_list_neg:
+            word_list_neg.append(word_lower)
+            words_freq_neg[word_lower] = 1
+          else:
+            words_freq_neg[word_lower] = words_freq_neg[word_lower] + 1
             
 print('word list:',word_list)
 print('word freq:',words_freq)
@@ -386,6 +387,10 @@ words_freq_neg={k:v for k,v in words_freq_pos.items() if k in words_freq}
 We can calculate the probability of any word. For our analysis we are going to calculate the probability of the word "the". We are going to so do so by 
 
 P\["the"] = <sup>num of documents containing "the"</sup>/<sub>num of all documents</sub>
+
+
+
+
 
 
 
